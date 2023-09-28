@@ -1,3 +1,5 @@
+##RUN IN DIRECTORY PULLED FROM EO2 (okhttp-cache-dir)
+
 import os, shutil, sys
 from traceback import format_exc
 
