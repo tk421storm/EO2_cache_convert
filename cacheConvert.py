@@ -29,10 +29,10 @@ for filepath in os.listdir(currentRoot):
                                 originalUID=artworkURL.split("artworks")[1].split("/")[6]
                                 artworkExtension=artworkURL.split("?")[0].split(".")[-1]
 
-                                print("i think this was for artwork "+str(originalUID))
+                                print("i think this was for artwork "+str(originalUID)+" but its been converted, adding extension + webp")
 
                                 cachePath=os.path.join(currentRoot, os.path.splitext(filepath)[0]+".1")
-                                artworkPath=os.path.join(outputDirectory, originalUID+"."+artworkExtension)
+                                artworkPath=os.path.join(outputDirectory, originalUID+"."+artworkExtension+".webp")
 
                                 shutil.copy(cachePath, artworkPath)
 
